@@ -87,8 +87,12 @@ h2 {
   display: none;
 }
 
-.question-button {
+.toggle-button {
   margin-left: auto;
   cursor: pointer;
   transition: 0.4s;
+}
+
+footer {
+  padding: 2rem;
 }

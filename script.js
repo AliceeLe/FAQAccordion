@@ -18,7 +18,7 @@ for (i = 0; i < questions.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    var button = question.getElementsByClassName("question-button")[0];
+    var button = question.getElementsByClassName("toggle-button")[0];
     if (panel.style.display === "block") {
       panel.style.display = "none";
       event.target.src = "assets/images/icon-minus.svg";
