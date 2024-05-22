@@ -1,0 +1,94 @@
+:root {
+  --Light-Pink: #f8eeff;
+  --Pale-Purple: #8b6990;
+  --White: #fff;
+  --Dark-Purple: #301534;
+}
+
+body {
+  background: var(--Light-Pink);
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+  font-family: "Work Sans";
+  font-weight: 400;
+  line-height: normal;
+  color: var(--Pale-Purple);
+}
+
+.main {
+  /* container of image and container needs to be relative*/
+  position: relative;
+  /* img and container as a flexbox */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .background-top > img {
+  /* locate so image starts at the top left, absolute position */
+  position: absolute;
+  /* top-left */
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.accordion-container {
+  width: 40rem;
+  margin-top: 10rem;
+  border-radius: 16px;
+  background: var(--White);
+  box-shadow: 0 32px 56px rgba(80, 0, 118, 0.1);
+  position: relative;
+  padding: 3rem;
+}
+
+.intro {
+  display: flex;
+  gap: 2rem;
+}
+
+h1 {
+  color: var(--Dark-Purple);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--Dark-Purple);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+}
+
+.question > h2 {
+  color: var(--Dark-Purple);
+
+  /* Title */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.panel > p {
+  /* Body */
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+
+.panel {
+  /* Content originally hidden */
+  overflow: hidden;
+  display: none;
+}
+
+.question-button {
+  margin-left: auto;
+  cursor: pointer;
+  transition: 0.4s;
+}
